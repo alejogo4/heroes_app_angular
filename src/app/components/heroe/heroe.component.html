@@ -1,0 +1,14 @@
+<div class="card text-center">
+    <div class="card-header">
+        {{Heroe.aparicion | date:'y'}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{Heroe.nombre | uppercase}}</h5>
+        <img [src]="Heroe.img" [alt]="Heroe.nombre">
+        <p class="card-text">{{Heroe.bio}}</p>
+
+    </div>
+    <div class="card-footer text-muted">
+        {{Heroe.aparicion}}
+    </div>
+</div>

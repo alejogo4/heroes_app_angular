@@ -1,0 +1,12 @@
+<div class="card">
+    <img src="{{Heroe.img}} " class="card-img-top " alt="{{Heroe.nombre}} ">
+    <div class="card-body ">
+        <h5 class="card-title ">{{Heroe.nombre}}</h5>
+        <p class="card-text ">{{Heroe.bio}}</p>
+        <p class="card-text "><small class="text-muted ">{{Heroe.aparicion}}</small></p>
+    </div>
+    <!-- Usando Anchord redireccion con parametro
+    <a [routerLink]="['/heroe', i]" class="btn btn-block btn-outline-primary "></a>
+    -->
+    <button (click)="verHeroe()" class="btn btn-block btn-outline-primary ">Ver Mas...</button>
+</div>

@@ -1,0 +1,8 @@
+<div class="container animated fadeIn">
+    <div class="card-columns">
+        <!--*ngFor="let Heroe of Heroes; let i=index"-->
+        <app-heroe-card (heroeSeleccionado)="verHeroe($event)" [Heroe]="Heroe" [index]="i" *ngFor="let Heroe of Heroes; let i=index"></app-heroe-card>
+
+    </div>
+
+</div>
